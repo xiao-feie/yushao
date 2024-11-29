@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">忧郁冷酷余少</div>
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#about">关于我</a>
+            <a href="#contact">联系方式</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="imgs/1.jpg" alt="个人头像" class="avatar">
+            <h1>你好，我是 忧郁冷酷余少</h1>
+            <p>一句简短的个人介绍语</p>
+        </div>
+    </section>
+
+    <!-- 轮播图部分 -->
+    <section class="carousel-section">
+        <div class="carousel">
+            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="imgs/1.jpg" alt="项目展示1">
+                    <p class="caption">Web全栈开发</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="imgs/2.jpg" alt="项目展示2">
+                    <p class="caption">移动应用开发</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="imgs/3.jpg" alt="项目展示3">
+                    <p class="caption">AI应用研究</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="imgs/4.jpg" alt="项目展示4">
+                    <p class="caption">UI/UX设计</p>
+                </div>
+            </div>
+            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- 个人简介 -->
+    <section id="about" class="about">
+        <h2>关于我</h2>
+        <p class="bio">
+            你，我是一名充满创造力的全栈开发者。热爱技术，专注于Web开发和人工智能领域。
+            擅长将复杂的问题简单化，追求代码的优雅与效率。
+            在工作之余，我喜欢摄影和设计，用不同的方式表达对美的追求。
+        </p>
+        <div class="tags">
+            <span class="tag">全栈开发</span>
+            <span class="tag">UI设计</span>
+            <span class="tag">人工智能</span>
+            <span class="tag">摄影爱好者</span>
+            <span class="tag">终身学习者</span>
+        </div>
+    </section>
+
+    <!-- 社交媒体 -->
+    <footer id="contact" class="social">
+        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </footer>
+
+    <!-- AI对话界面 -->
+    <div class="ai-chat-button" id="aiChatButton">
+        <i class="fas fa-robot"></i>
+    </div>
+    
+    <div class="ai-chat-window" id="aiChatWindow">
+        <div class="chat-header">
+            <h3>AI助手</h3>
+            <div class="chat-controls">
+                <button class="minimize-btn" id="minimizeBtn"><i class="fas fa-minus"></i></button>
+                <button class="close-btn" id="closeBtn"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- 初始消息将由JavaScript动态添加 -->
+        </div>
+        <div class="chat-input-area">
+            <textarea id="chatInput" placeholder="输入消息..."></textarea>
+            <button class="send-btn" id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-encode@1.0.1/dist/jwt-encode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
